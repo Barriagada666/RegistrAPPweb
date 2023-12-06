@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga La Aplicacion RegistrAPP</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px; /* Redondear bordes de la web */
+        }
+
+        h1 {
+            color: #33a2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-bottom: 1px solid #33a2ff; /* Línea separadora con color azul */
+            padding: 10px;
+            border-radius: 10px; /* Redondear bordes del título */
+        }
+
+        h1 img {
+            max-width: 60px;
+            border-radius: 10%; /* Redondear bordes del logo */
+        }
+
+        #pc-message, #mobile-message {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        #pc-qr-code {
+            width: 200px;
+            height: 200px;
+            margin-top: 15px;
+            border-radius: 10px; /* Redondear bordes del código QR */
+        }
+
+        #mobile-download-btn {
+            background-color: #0080ff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #mobile-download-btn:hover {
+            background-color: #005bb5;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* Estilos específicos para PC */
+            #pc-message {
+                display: block;
+                margin: 0 auto;
+                max-width: 400px;
+            }
+
+            #pc-qr-code {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #mobile-message {
+                display: none;
+            }
+
+            #mobile-download-btn {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            /* Estilos específicos para dispositivos móviles */
+            #mobile-message {
+                display: block;
+                margin: 0 auto;
+                max-width: 400px;
+            }
+
+            #pc-message {
+                display: none;
+            }
+
+            #pc-qr-code {
+                display: none;
+            }
+
+            #mobile-download-btn {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a>
+            <img src="https://i.ibb.co/56BbX13/registrapp.png" alt="RegistrAPP" border="0">
+        </a>
+        Descarga La Aplicacion RegistrAPP
+    </h1>
+
+    <div id="pc-message">
+        <p>Estás en un computador.</p>
+        <p>Escanea el siguiente QR para descargar la APK:</p>
+        <img src="https://i.ibb.co/j3wBXDQ/Registr-APP.png" alt="RegistrAPP" border="0" style="width: 100%; height: auto;">
+    </div>
+
+    <div id="mobile-message">
+        <p>Estás en un Dispositivo móvil.</p>
+    </div>
+
+    <button id="mobile-download-btn" onclick="window.location.href='https://docs.google.com/uc?export=download&id=1gLYfaa3Ple8UDVd1QN7FQEfoOhyjuW1m'">
+</body>
+</html>
