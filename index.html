@@ -147,9 +147,24 @@
 
     <div id="mobile-message">
         <a href="#" class="myButton2">Estás en un dispositivo móvil.</a>
-        <button id="mobile-download-btn" onclick="window.location.href='https://docs.google.com/uc?export=download&id=1gLYfaa3Ple8UDVd1QN7FQEfoOhyjuW1m'" rel="noopener noreferrer">
-            Descargar APK
-        </button>
+        <button id="mobile-download-btn" onclick="confirmarDescarga()">
+    Descargar APK
+		</button>
+
+		<script>
+			function confirmarDescarga() {
+				// Muestra un mensaje de confirmación al usuario
+				var confirmacion = confirm("Serás redirigido a la web de descarga del APK. ¿Estás seguro de continuar?");
+
+				// Si el usuario hace clic en "Aceptar", realiza la redirección
+				if (confirmacion) {
+					window.location.href = 'https://docs.google.com/uc?export=download&id=1gLYfaa3Ple8UDVd1QN7FQEfoOhyjuW1m';
+				} else {
+					// Si el usuario hace clic en "Cancelar", no hace nada
+					// Puedes agregar código adicional aquí si es necesario
+				}
+			}
+		</script>
     </div>
 </body>
 </html>
