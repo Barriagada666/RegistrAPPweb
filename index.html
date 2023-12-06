@@ -38,25 +38,25 @@
         }
 
         .button {
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-decoration:none;
-            font-family:monospace;
-            font-size:26px;
-            font-weight:bold;
-            height:auto;
-            width:auto;
-            padding:25px 25px 25px 25px;
-            color:#ffffff;
-            background-color:#0091ff;
-            transition:all 0.3s;
-          }
-          
-          .button:hover{
-          color:#0091ff
-          background-color:#ffffff
-          }
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  font-family:monospace;
+  font-size:26px;
+  font-weight:bold;
+  height:auto;
+  width:auto;
+  padding:25px 25px 25px 25px;
+  color:#ffffff;
+  background-color:#0091ff;
+  transition:all 0.3s;
+}
+
+.button:hover{
+color:#0091ff
+background-color:#ffffff
+}
 
         h1 {
             color: #33a2ff;
@@ -84,44 +84,7 @@
             margin: 0 auto;
         }
 
-        #mobile-message .mobile-download-btn:hover {
-            background-color: #005bb5;
-        }
-
-        @media only screen and (min-width: 600px) {
-            #pc-message {
-                display: block;
-            }
-
-            #mobile-message, #mobile-message .mobile-download-btn {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 599px) {
-            #mobile-message {
-                display: block;
-            }
-
-            #pc-message, #pc-qr-code {
-                display: none;
-            }
-
-            #mobile-message .mobile-download-btn {
-                display: block;
-                background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-                background-color: #c62d1f;
-                border: 1px solid #d02718;
-                padding: 12px 25px;
-                color: #fff;
-                margin-top: 15px;
-            }
-
-            #mobile-message .mobile-download-btn:hover {
-                background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-                background-color: #f24437;
-            }
-        }
+        
     </style>
 </head>
 <body>
@@ -137,7 +100,8 @@
     </div>
 
     <div id="mobile-message">
-        <a class = "button"  href = "https://appho.st/d/wfHUV7Sj"> Descargar APK </a>
+        <a class="button" href="https://appho.st/d/wfHUV7Sj" target="_blank">Descargar APK</a>
+
         
     </div>
 </body>
