@@ -14,7 +14,7 @@
             border-radius: 10px; /* Redondear bordes de la web */
         }
 
-        .myButton, .myButton2 {
+        .myButton {
             box-shadow: inset 0px 1px 0px 0px #a4e271;
             display: inline-block;
             cursor: pointer;
@@ -24,9 +24,6 @@
             text-decoration: none;
             text-shadow: 0px 1px 0px #528009;
             border-radius: 6px;
-        }
-
-        .myButton {
             background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
             background-color: #c62d1f;
             border: 1px solid #d02718;
@@ -80,16 +77,7 @@
             margin: 0 auto;
         }
 
-        #pc-qr-code {
-            width: 200px;
-            height: 200px;
-            margin-top: 15px;
-            border-radius: 10px; /* Redondear bordes del código QR */
-            display: block;
-            margin: 0 auto;
-        }
-
-        #mobile-download-btn {
+        #mobile-message .mobile-download-btn {
             background-color: #0080ff;
             color: #fff;
             padding: 10px 20px;
@@ -102,7 +90,7 @@
             text-decoration: none; /* Añadido para evitar subrayado en el enlace */
         }
 
-        #mobile-download-btn:hover {
+        #mobile-message .mobile-download-btn:hover {
             background-color: #005bb5;
         }
 
@@ -112,7 +100,7 @@
                 display: block;
             }
 
-            #mobile-message, #mobile-download-btn {
+            #mobile-message, #mobile-message .mobile-download-btn {
                 display: none;
             }
         }
@@ -127,7 +115,7 @@
                 display: none;
             }
 
-            #mobile-download-btn {
+            #mobile-message .mobile-download-btn {
                 display: block;
             }
         }
@@ -150,8 +138,6 @@
         <button onclick="window.open('https://docs.google.com/uc?export=download&id=1gLYfaa3Ple8UDVd1QN7FQEfoOhyjuW1m', '_blank')">
 		Descargar APK
 		</button>
-
-
     </div>
 </body>
 </html>
