@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarga la Aplicación RegistrAPP</title>
+    <title>Descarga La Aplicacion RegistrAPP</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,52 +11,8 @@
             margin: 20px;
             background-color: #000;
             color: #fff;
-            border-radius: 10px;
+            border-radius: 10px; /* Redondear bordes de la web */
         }
-
-        .myButton {
-            box-shadow: inset 0px 1px 0px 0px #a4e271;
-            display: inline-block;
-            cursor: pointer;
-            font-family: Arial;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #528009;
-            border-radius: 6px;
-            background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-            background-color: #c62d1f;
-            border: 1px solid #d02718;
-            padding: 12px 25px;
-            color: #fff;
-            margin-top: 15px;
-        }
-
-        .myButton:hover {
-            background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-            background-color: #f24437;
-        }
-
-        .button {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-decoration:none;
-  font-family:monospace;
-  font-size:26px;
-  font-weight:bold;
-  height:auto;
-  width:auto;
-  padding:25px 25px 25px 25px;
-  color:#ffffff;
-  background-color:#0091ff;
-  transition:all 0.3s;
-}
-
-.button:hover{
-color:#0091ff
-background-color:#ffffff
-}
 
         h1 {
             color: #33a2ff;
@@ -64,14 +20,14 @@ background-color:#ffffff
             align-items: center;
             justify-content: center;
             gap: 10px;
-            border-bottom: 1px solid #33a2ff;
+            border-bottom: 1px solid #33a2ff; /* Línea separadora con color azul */
             padding: 10px;
-            border-radius: 10px;
+            border-radius: 10px; /* Redondear bordes del título */
         }
 
         h1 img {
             max-width: 60px;
-            border-radius: 10%;
+            border-radius: 10%; /* Redondear bordes del logo */
         }
 
         #pc-message, #mobile-message {
@@ -80,29 +36,92 @@ background-color:#ffffff
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 20px;
-            max-width: 400px;
-            margin: 0 auto;
         }
 
-        
+        #pc-qr-code {
+            width: 200px;
+            height: 200px;
+            margin-top: 15px;
+            border-radius: 10px; /* Redondear bordes del código QR */
+        }
+
+        #mobile-download-btn {
+            background-color: #0080ff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #mobile-download-btn:hover {
+            background-color: #005bb5;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* Estilos específicos para PC */
+            #pc-message {
+                display: block;
+                margin: 0 auto;
+                max-width: 400px;
+            }
+
+            #pc-qr-code {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #mobile-message {
+                display: none;
+            }
+
+            #mobile-download-btn {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            /* Estilos específicos para dispositivos móviles */
+            #mobile-message {
+                display: block;
+                margin: 0 auto;
+                max-width: 400px;
+            }
+
+            #pc-message {
+                display: none;
+            }
+
+            #pc-qr-code {
+                display: none;
+            }
+
+            #mobile-download-btn {
+                display: block;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>
-        <img src="https://i.ibb.co/56BbX13/registrapp.png" alt="RegistrAPP" border="0">
-        Descarga la Aplicación RegistrAPP
+        <a>
+            <img src="https://i.ibb.co/56BbX13/registrapp.png" alt="RegistrAPP" border="0">
+        </a>
+        Descarga La Aplicacion RegistrAPP
     </h1>
 
     <div id="pc-message">
-        <a href="#" class="myButton">Estás en un computador.</a>
+        <p>Estás en un computador.</p>
         <p>Escanea el siguiente QR para descargar la APK:</p>
         <img src="https://i.ibb.co/j3wBXDQ/Registr-APP.png" alt="RegistrAPP" border="0" style="width: 100%; height: auto;">
     </div>
 
     <div id="mobile-message">
-        <a class="button" href="https://appho.st/d/wfHUV7Sj" target="_blank">Descargar APK</a>
-
-        
+        <p>Estás en un Dispositivo móvil.</p>
     </div>
+
+    <button id="mobile-download-btn" onclick="window.location.href='https://docs.google.com/uc?export=download&id=1gLYfaa3Ple8UDVd1QN7FQEfoOhyjuW1m'">
 </body>
 </html>
